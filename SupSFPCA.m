@@ -93,7 +93,7 @@ if(start==0)
     Sf=diag(diag((1/n)*(U-Y*B)'*(U-Y*B))); % initial Sf
     clear E D;
 elseif(start==1)
-    [B,V,U,se2,Sf]=EMS6(Y,X,r); % try to use SupSVD as initial estimation
+    [B,V,U,se2,Sf]=SupPCA(Y,X,r); % try to use SupSVD as initial estimation
 end;
 
 
